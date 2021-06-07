@@ -105,3 +105,74 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.dancing-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: dance 5s linear infinite alternate;
+}
+
+
+/*example for same div as dancing-box, but without shorthand animation property
+div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}*/
+
+@keyframes dance {
+    0% {
+        background-color: deeppink;
+        left: 0px;
+        top: 0px;
+    }
+    5% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(360deg);
+    }
+    25% {
+        background-color: gold;
+        left: 200px;
+        top: 0px;
+    }
+    30% {
+        transform: rotate(0);
+    }
+    35% {
+        transform: rotate(360deg);
+    }
+    50% {
+        background-color: deepskyblue;
+        left: 200px;
+        top: 200px;
+    }
+    55% {
+        transform: rotate(0);
+    }
+    60% {
+        transform: rotate(360deg);
+    }
+    75% {
+        background-color: purple;
+        left: 0px;
+        top: 200px;
+    }
+    80% {
+        transform: rotate(0);
+    }
+    85% {
+        transform: rotate(360deg);
+    }
+    100% {
+        background-color: deeppink;
+        left: 0px;
+        top: 0px;
+    }
+}
